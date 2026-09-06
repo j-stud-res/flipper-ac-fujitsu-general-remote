@@ -9,7 +9,7 @@ App(
     stack_size=3 * 1024,
     fap_category="Infrared",
     fap_icon="fujitsu_general_remote.png",  # 10x10 1-bit PNG
-    fap_description="Remote Control for Indoor AC Fujitsu General ASHG12KPCE. Check the githup page for compatibillity with other ACs",
+    fap_description="Remote Control for Indoor AC Fujitsu General ASHG12KPCE. Check the details for compatibillity with other ACs",
     fap_author="Z. Nikolov",
     fap_weburl="https://github.com/j-stud-res/flipper-ac-fujitsu-general-remote",
     fap_icon_assets="images",  # Image assets to compile for this application
