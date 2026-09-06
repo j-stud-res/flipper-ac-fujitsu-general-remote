@@ -198,6 +198,7 @@ bool view_fujitsu_remote_page3_input_callback(InputEvent* event, void* ctx) {
                     view_dispatcher_send_custom_event(
                         app->view_dispatcher, FujitsuRemoteAppEvent_PowerModeToggle);
                     update = true;
+                    break;
                 default:
                     furi_assert(false && "Page 3: Unknown button");
                 }

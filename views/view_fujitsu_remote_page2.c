@@ -217,6 +217,7 @@ bool view_fujitsu_remote_page2_input_callback(InputEvent* event, void* ctx) {
                     view_dispatcher_send_custom_event(
                         app->view_dispatcher, FujitsuRemoteAppEvent_FanSpeedNext);
                     update = true;
+                    break;
                 default:
                     furi_assert(false && "Page2: Unknown button");
                 }
