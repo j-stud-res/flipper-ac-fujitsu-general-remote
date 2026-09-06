@@ -5,6 +5,7 @@
 - The remote is build for and testd with model ***Fujitsu General ASHG12KPCE***.
 - Uing this app with incompatible A/C can lock the A/C up until it's physically power-cycled
 - Check the [compatibility](REMOTE_COMPATIBILLITY.md) page for info on other models.
+- Check the [Views](./VIEWS.md) for screenshots of each described view
 
 # Usage
 
@@ -23,9 +24,6 @@ The app has 3 main views. Change views with ***InputKeyLeft*** and ***InputKeyRi
 - Second icon indicates if Auto Swing is set on/off
 - Third icon indicates the current fan speed.
 
-![view1](./docs/img/Screenshot-1.png)
-
-
 ## View 2
 
 ***Navigation***
@@ -41,9 +39,6 @@ The app has 3 main views. Change views with ***InputKeyLeft*** and ***InputKeyRi
 - Foruth button toggles auto swing
 - Fifth button cycles trough fan speeds.
 
-![view2](./docs/img/Screenshot-2.png)
-
-
 ## View 3
 
 ***Navigation***
@@ -57,9 +52,6 @@ The app has 3 main views. Change views with ***InputKeyLeft*** and ***InputKeyRi
 - ***Cancel*** - Cancels all timers (ON/OFF and Sleep)
 - ***Sleep*** - Opens a view for configuring a sleep timer
 - ***Power*** - Toggles Powerfull mode of the AC
-
-![view3](./docs/img/Screenshot-3.png)
-
 
 ## View 3 - Timer
 
@@ -79,9 +71,6 @@ The app has 3 main views. Change views with ***InputKeyLeft*** and ***InputKeyRi
   - ***ON->OFF*** - Turn ON the AC after configured ***ON Time***, then turn OFF the AC after the configured ***OFF Time*** (Turn ON the AC after 30 min(***ON Time*** = 30min), then turn OFF the ac after 30 minutes(***OFF Time*** = 30min))
   - ***OFF->ON*** - Same as ***OFF-ON*** but first turn off the AC, then turn it ON
 
-
-![view3-timer](./docs/img/Screenshot-3-timer.png)
-
 ## View 3 - Sleep
 
 ***Navigation***
@@ -90,19 +79,13 @@ The app has 3 main views. Change views with ***InputKeyLeft*** and ***InputKeyRi
 - Use ***InputKeyLeft*** and ***InputKeyRight*** to select a value for that item
 - Select ***Confirm*** item and press ***InputKeyOk*** button to send the signal to the AC
 
-
 ***Description***
 
 - Set a sleep timer for the AC
 
-
-![view3-sleep](./docs/img/Screenshot-3-sleep.png)
-
-
 # Credits
 
 - All assest were drawn using this great and free web app - [piskelapp](https://www.piskelapp.com/)
-
 
 - Developing the app was made much more easier by [this great tutorial](https://instantiator.dev/post/flipper-zero-app-tutorial-01/) by [instantiator.dev](https://instantiator.dev)
 
