@@ -12,7 +12,6 @@
  */
 uint8_t fuji_AC_temp_to_celsius(uint8_t temp, bool* and_a_half);
 
-
 /**
  * @brief Get the new temperature, increased by one step.
  *   If @p current_temp >= max temp, return max temp
@@ -20,7 +19,6 @@ uint8_t fuji_AC_temp_to_celsius(uint8_t temp, bool* and_a_half);
  * @return uint8_t Temperature increased by one step in the range allowed by the AC
  */
 uint8_t fuji_AC_temp_up(uint8_t current_temp);
-
 
 /**
  * @brief Get the new temperature, decreased by one step.
@@ -30,7 +28,6 @@ uint8_t fuji_AC_temp_up(uint8_t current_temp);
  */
 uint8_t fuji_AC_temp_down(uint8_t current_temp);
 
-
 /**
  * @brief Cycle to the next speed of the fan
  * 
@@ -38,7 +35,6 @@ uint8_t fuji_AC_temp_down(uint8_t current_temp);
  * @return uint8_t Next speed of the fan
  */
 uint8_t fuji_AC_fan_next(uint8_t current_speed);
-
 
 /**
  * @brief Cycle to the prev speed of the fan
@@ -56,7 +52,6 @@ uint8_t fuji_AC_fan_prev(uint8_t current_speed);
  */
 const char* fuji_AC_mode_str(FujiAirMode mode);
 
-
 /**
  * @brief Get the correct power icon, depending on the fan speed
  * 
@@ -64,7 +59,6 @@ const char* fuji_AC_mode_str(FujiAirMode mode);
  * @return const Icon* 
  */
 const Icon* fuji_AC_fan_to_icon(uint8_t speed);
-
 
 /**
  * @brief Cycle to the next AC mode
