@@ -26,11 +26,8 @@ void fujitsu_remote_ac_state_read_from_file(FujitsuAirState* ac) {
     File* file = storage_file_alloc(storage);
 
     FujitsuAcSavedState state;
-    FURI_LOG_D("AC_STORAGE", "Opening file to read");
     if(storage_file_open(file, AC_STATE_FILE_PATH, FSAM_READ, FSOM_OPEN_EXISTING)) {
-        FURI_LOG_D("AC_STORAGE", "Reading from file");
         if(storage_file_read(file, &state, sizeof(state)) == sizeof(state)) {
-            FURI_LOG_D("AC_STORAGE", "Filling struct");
             if(state.magic == AC_STATE_MAGIC && state.version == AC_STATE_VERSION) {
                 ac->mode = state.mode;
                 ac->temperature = state.temp;
@@ -43,12 +40,9 @@ void fujitsu_remote_ac_state_read_from_file(FujitsuAirState* ac) {
                 ac->swing = state.swing;
                 ac->has_alarm = state.has_alarm;
                 ac->economy = state.economy;
-
-                FURI_LOG_D("AC_STORAGE", "Populated AC State");
             }
         }
     }
-    FURI_LOG_D("AC_STORAGE", "Closing the file");
     storage_file_close(file);
     storage_file_free(file);
     furi_record_close(RECORD_STORAGE);
@@ -74,19 +68,12 @@ void fujitsu_remote_ac_state_write_to_file(FujitsuAirState* ac) {
         .swing = ac->swing,
         .has_alarm = ac->has_alarm,
         .economy = ac->economy};
-    FURI_LOG_D("AC_STORAGE", "Opening file to write - %s", AC_STATE_FILE_PATH);
-    if(storage_file_open(file, AC_STATE_FILE_PATH, FSAM_WRITE, FSOM_CREATE_ALWAYS)) {
-        FURI_LOG_D("AC_STORAGE", "Writing to file");
-        storage_file_write(file, &state, sizeof(state));
-    } else {
-        FURI_LOG_D("AC_STORAGE", "Unable to open file");
-        FS_Error err = storage_file_get_error(file);
 
-        FURI_LOG_D("AC_STORAGE", "FS_Error - %u", err);
+    if(storage_file_open(file, AC_STATE_FILE_PATH, FSAM_WRITE, FSOM_CREATE_ALWAYS)) {
+        storage_file_write(file, &state, sizeof(state));
     }
 
     storage_file_close(file);
     storage_file_free(file);
     furi_record_close(RECORD_STORAGE);
-    FURI_LOG_D("AC_STORAGE", "FILE CLOSED");
 }

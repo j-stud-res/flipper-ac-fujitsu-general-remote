@@ -313,8 +313,6 @@ void send_fuji128_state(Fuji128Signal* sig) {
 #ifndef FUJI_IR_DEBUG
     infrared_send_raw(timings, c_Fuji128TimingsLength, true);
 #else
-    FURI_LOG_D("DEBUUUUG", "DEBUUUUG 1");
     fuji128_ir_debug(&msg, timings);
-    FURI_LOG_D("DEBUUUUG", "DEBUUUUG 2");
 #endif /* FUJI_IR_DEBUG */
 }
