@@ -252,18 +252,11 @@ static bool fujitsu_remote_app_ac_change_event_callback(void* ctx, uint32_t even
         fujitsu_remote_send_AC_state(ac, false);
         return true;
     case FujitsuRemoteAppEvent_TimerChanged:
-        FURI_LOG_D(
-            LTAG,
-            "TimerChanged event - Mode: %u ON: %lu OFF: %lu",
-            ac->on_off_timer_mode,
-            ac->on_timer,
-            ac->off_timer);
         ac->has_alarm = true;
         ac->sleep_timer = 0;
         fujitsu_remote_send_AC_state(ac, false);
         return true;
     case FujitsuRemoteAppEvent_SleepChanged:
-        FURI_LOG_D(LTAG, "SellpChanged event - %lu", ac->sleep_timer);
         ac->has_alarm = true;
         ac->on_off_timer_mode = FujiAirTimerModes_NOT_SET;
         ac->on_timer = 0;
