@@ -12,12 +12,12 @@ The app has 3 main views. Change views with `InputKeyLeft` and `InputKeyRight`
 
 ## View 1
 
-### Navigation
+***Navigation***
 
 - Turn on/off the AC with the `InputKeyOk`
 - Change temperatrue using the `InputKeyUp` and `InputKeyDown` (temperature is displayes in degrees celsius)
 
-### Description
+***Description***
 
 - The first clock icon will be visible only if there is a sleep or on/off timers set.
 - Second icon indicates if Auto Swing is set on/off
@@ -28,12 +28,12 @@ The app has 3 main views. Change views with `InputKeyLeft` and `InputKeyRight`
 
 ## View 2
 
-### Navigation
+***Navigation***
 
 - Change selected button using the `InputKeyUp` and `InputKeyDown`
 - Press the selected button using `InputKeyOk`
 
-### Description
+***Description***
 
 - First button cycles trough the AC modes (Auto, Cool, Heat, Fan, etc.)
 - Second button toggles Economy mode
@@ -46,12 +46,12 @@ The app has 3 main views. Change views with `InputKeyLeft` and `InputKeyRight`
 
 ## View 3
 
-### Navigation
+***Navigation***
 
 - Change selected button using the `InputKeyUp` and `InputKeyDown`
 - Press the selected button using `InputKeyOk`
 
-### Description
+***Description***
 
 - `Timer` - Opens a view for configuring AC ON/OFF timers
 - `Cancel` - Cancels all timers (ON/OFF and Sleep)
@@ -63,13 +63,13 @@ The app has 3 main views. Change views with `InputKeyLeft` and `InputKeyRight`
 
 ## View 3 - Timer
 
-### Navigation
+***Navigation***
 
 - Use `InputKeyUp` and `InputKeyDown` to select an item.
 - Use `InputKeyLeft` and `InputKeyRight` to select a value for that item
 - Select `Confirm` item and press `InputKeyOk` button to send the signal to the AC
 
-### Description
+***Description***
 
 - `ON Time` and `OFF Time` configure the ON and OFF timer values
 
@@ -84,14 +84,14 @@ The app has 3 main views. Change views with `InputKeyLeft` and `InputKeyRight`
 
 ## View 3 - Sleep
 
-### Navigation
+***Navigation***
 
 - Use `InputKeyUp` and `InputKeyDown` to select an item.
 - Use `InputKeyLeft` and `InputKeyRight` to select a value for that item
 - Select `Confirm` item and press `InputKeyOk` button to send the signal to the AC
 
 
-### Description
+***Description***
 
 - Set a sleep timer for the AC
 
