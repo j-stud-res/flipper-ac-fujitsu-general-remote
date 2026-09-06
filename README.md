@@ -141,5 +141,5 @@ ufbt launch
 - All assest were drawn using this great and free web app - [piskelapp](https://www.piskelapp.com/)
 
 
-- Developing the app was made much more easier by [this great tutorial](https://instantiator.dev/post/flipper-zero-app-tutorial-01/) by (instantiator.dev)[https://instantiator.dev]
+- Developing the app was made much more easier by [this great tutorial](https://instantiator.dev/post/flipper-zero-app-tutorial-01/) by [instantiator.dev](https://instantiator.dev)
 
