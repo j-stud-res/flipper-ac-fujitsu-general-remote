@@ -1,5 +1,5 @@
 #include "view_fujitsu_remote_page3.h"
-#include "fujitsu_general_remote_icons.h"
+#include "ac_fujitsu_general_indoor_ir_remote_icons.h"
 
 typedef enum {
     FujiPage3Button_Timer = 0,

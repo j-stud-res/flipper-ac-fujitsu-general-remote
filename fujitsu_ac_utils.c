@@ -1,6 +1,6 @@
 #include "fujitsu_ac_utils.h"
 #include "fujitsu_general_remote.h"
-#include "fujitsu_general_remote_icons.h"
+#include "ac_fujitsu_general_indoor_ir_remote_icons.h"
 
 uint8_t fuji_AC_temp_to_celsius(uint8_t temp, bool* and_a_half) {
     *and_a_half = (temp % 2 != 0);

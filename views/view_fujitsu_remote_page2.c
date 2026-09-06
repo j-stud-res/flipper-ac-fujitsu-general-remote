@@ -1,6 +1,6 @@
 #include <core/timer.h>
 #include "view_fujitsu_remote_page2.h"
-#include "fujitsu_general_remote_icons.h"
+#include "ac_fujitsu_general_indoor_ir_remote_icons.h"
 #include "fujitsu_general_remote.h"
 #include "fujitsu_ac_utils.h"
 
